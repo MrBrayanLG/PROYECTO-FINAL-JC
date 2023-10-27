@@ -1,19 +1,19 @@
-/* Estilos para la lista de navegación */
+
 /* Estilos para la lista de navegación */
 .lista {
     list-style: none;
-    background-color: rgb(255, 230, 0); /* Fondo de la lista de navegación */
-    display: flex;
     justify-content: space-between;
     padding: 10px; /* Añade espacio alrededor de la lista */
     position: fixed; /* Fija la lista en la parte superior */
     top: 0;
     left: 0;
     width: 100%;
+    color: yellow;
+
 }
 
 .lista li {
-    margin: 0 10px;
+    margin: 0 80px;
 }
 
 /* Estilos para los botones */
@@ -23,17 +23,5 @@
 
 .lista li a {
     text-decoration: none; /* Quita la decoración de subrayado de los enlaces */
-    padding: 10px 20px; /* Añade espacio alrededor del texto de los botones */
-    background-color: black; /* Cambia el fondo a negro */
-    color: yellow; /* Cambia el color del texto a amarillo */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
 
-.lista li a:hover {
-    background-color: #fad400;
 }
-
-/* Resto de tus estilos aquí */
