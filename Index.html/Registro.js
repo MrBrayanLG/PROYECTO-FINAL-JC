@@ -7,13 +7,15 @@ function guardarUsuario() {
     var apellido = document.getElementById("apellidos").value;
     var correo = document.getElementById("correo").value;
     var contraseña = document.getElementById("password").value;
+    var genero = document.getElementById("genero").value;
 
     // Crea un objeto con los datos del usuario
     var usuario = {
         nombre: nombre,
         apellido: apellido,
         correo: correo,
-        contraseña: contraseña
+        contraseña: contraseña,
+        genero: genero
     };
 
     // Convierte el objeto en una cadena JSON
@@ -26,10 +28,11 @@ function guardarUsuario() {
     window.location.href = 'Disfruta-Síon-Login.html';
 }
 
+
 // Función para iniciar sesión
 function iniciarSesion() {
-    // Captura el nombre de usuario y la contraseña ingresados
-    var username = document.getElementById("username").value;
+    // Captura el correo y la contraseña ingresados
+    var correo = document.getElementById("username").value;
     var password = document.getElementById("password").value;
 
     // Recupera los datos del usuario registrado del localStorage
@@ -39,8 +42,8 @@ function iniciarSesion() {
         // Convierte los datos del usuario almacenados en localStorage a un objeto
         var usuario = JSON.parse(usuarioJSON);
 
-        // Comprueba si el nombre de usuario y la contraseña coinciden con los datos almacenados
-        if (username === usuario.nombre && password === usuario.contraseña) {
+        // Comprueba si el correo y la contraseña coinciden con los datos almacenados
+        if (correo === usuario.correo && password === usuario.contraseña) {
             // Los datos coinciden, redirige al usuario a la página de inicio
             window.location.href = 'Disfruta-Sión-Inicio.html';
         } else {
@@ -52,5 +55,12 @@ function iniciarSesion() {
         alert('Cuenta no registrada o datos incorrectos.');
     }
 }
+
+
+
+
+
+
+
 
 
