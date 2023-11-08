@@ -1,5 +1,3 @@
-// Registro.js
-
 // Función para registrar y almacenar el usuario en el localStorage
 function guardarUsuario() {
     // Captura los datos del formulario
@@ -24,10 +22,12 @@ function guardarUsuario() {
     // Guarda los datos del usuario en el localStorage
     localStorage.setItem('usuario', usuarioJSON);
 
+    // Guarda el nombre del usuario en localStorage para usarlo en la barra de navegación
+    localStorage.setItem('nombreUsuario', nombre);
+
     // Redirige al usuario a la página de inicio de sesión
     window.location.href = 'Disfruta-Síon-Login.html';
 }
-
 
 // Función para iniciar sesión
 function iniciarSesion() {
@@ -56,11 +56,11 @@ function iniciarSesion() {
     }
 }
 
-
-
-
-
-
-
+// Verifica si ya hay un nombre de usuario en localStorage y actualiza la barra de navegación
+const nombreUsuario = localStorage.getItem('nombreUsuario');
+if (nombreUsuario) {
+    const perfilLink = document.querySelector(".enlace-perfil");
+    perfilLink.textContent = `PERFIL (${nombreUsuario})`;
+}
 
 
