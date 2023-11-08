@@ -1,6 +1,7 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
+
     
 }
 
@@ -36,15 +37,15 @@ body {
 }
 
 .hambu-img {
-    max-width: 100%; /* Hace que la imagen sea responsiva */
+    max-width: 100%; 
     display: block;
-    margin: 0 auto; /* Centra la imagen horizontalmente */
+    margin: 0 auto; 
 }
 
 .imagen-texto {
     display: flex;
-    flex-direction: column; /* Reorganiza los elementos en una columna en pantallas pequeñas */
-    align-items: center; /* Centra los elementos en el centro de la pantalla */
+    flex-direction: column; 
+    align-items: center; 
     text-align: center;
 }
 
@@ -59,18 +60,22 @@ p {
 
 .icono-perfil {
     width: 40px;
-    display: block; /* Asegura que el icono de perfil esté centrado en dispositivos móviles */
+    display: block; 
     margin: 0 auto;
 }
 
 footer {
-    background-color: #686868;
-    color: #fff;
+    background-color: #e4e4e4;
+    color: rgba(255, 255, 255, 0.966);
     padding: 20px;
     text-align: center;
+    background-image: url('../IMG/img-footer.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
 }
 
-/* Estilos para dispositivos de pantalla pequeña */
+
 @media (max-width: 767px) {
     .lista {
         flex-direction: column;
@@ -85,10 +90,119 @@ footer {
 }
 
 
-/* Estilos para la lista de enlaces en el footer */
+
 footer ul {
-    list-style: none; /* Quita los puntos de la lista */
+    list-style: none; 
     padding: 0;
     display: flex;
     justify-content: center;
 }
+
+
+.linea-menu {
+    text-align: center;
+}
+
+.linea-menu hr {
+    border: 1px solid black; 
+}
+
+.menu-titulo {
+    
+    color: rgb(255, 208, 0);
+    font-size: 35px; 
+    padding: 10px; 
+    display: inline-block; 
+}
+.m1 {
+    color: rgb(255, 208, 0);
+    font-size: 25px; 
+    padding: 10px; 
+    display: inline-block; 
+}
+
+.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+.menu-item {
+    border: 1px solid #ccc; 
+    padding: 20px;
+    margin: 10px;
+}
+
+.menu-item h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.menu-item p {
+    margin: 10px 0;
+}
+
+.precio {
+    color: green;
+    font-weight: bold;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 208, 0);
+}
+
+#nosotros {
+    background-color: #f4f4f4;  
+    padding: 20px;
+}
+
+#nosotros h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#nosotros p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+
+
+    
+.redes-sociales a img {
+    width: 40px; 
+    height: 40px; 
+    margin: 5px; 
+    transition: background-color 0.3s;
+}
+
+
+@media (max-width: 768px) {
+    .redes-sociales a img {
+        width: 30px; 
+        height: 30px;
+        margin: 4px;
+    }
+}
+
+.redes-sociales a img:hover {
+   
+    transform: scale(1.3);
+}
+
+
+
+
