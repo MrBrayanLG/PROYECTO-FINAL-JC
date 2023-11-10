@@ -5,16 +5,109 @@ body {
     
 }
 
+
 .bars {
     width: 30px; 
     height: 30px;
-    margin: 5px;
-    
-}
+    margin: 10px;
+    cursor: pointer;
+  
+    }
 .bars:hover {
     transform: scale(1.3);
 
 }
+.popover {
+    position: relative;
+    display: inline-block;
+}
+
+.options-container {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    right: 0;
+    top: 40px;
+    border-radius: 20px;
+
+}
+
+.options {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.options li {
+
+    padding: 2px;
+    cursor: pointer;
+    font-size: 17px;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .lista {
     list-style: none !important;
@@ -113,10 +206,18 @@ footer ul {
     text-align: center;
 }
 
-.linea-menu hr {
-    border: 1px solid black; 
-    
+#n1 {
+    text-align: center;
 }
+
+#n2 {
+    text-align: center;
+}
+
+
+
+
+
 
 .menu-titulo {
     
@@ -135,7 +236,23 @@ footer ul {
 .menu {
     text-align: center;
     margin: 20px;
+    
+    
 }
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+   }
+   @media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 
 
@@ -144,6 +261,8 @@ footer ul {
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
+   
+    
 }
 
 .menu-item h2 {
@@ -177,7 +296,7 @@ nav ul li a {
 }
 
 #nosotros {
-    background-color: #FDFDFD;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 5px;
 }
@@ -219,3 +338,103 @@ nav ul li a {
 
 
 
+/* Estilos para la sección de reseñas */
+#reseñas {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 30px;
+    
+    background-size: cover;
+    background-position: center;
+    
+
+}
+
+.seccion-titulo {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.resenas-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.resena {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.cliente-nombre {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cliente-resena {
+    font-size: 16px;
+    color: #666;
+}
+
+.agregar-resena {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.agregar-titulo {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.agregar-formulario {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.agregar-label {
+    display: block;
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.agregar-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.agregar-boton {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.agregar-boton:hover {
+    background-color: #45a049;
+}
+
+
+
+.con-logo {
+    background-image: url('../IMG/Fondo-WebOrigin.png'); /* Reemplaza 'ruta/al/logo.png' con la ruta de tu logo */
+    color: #ffffff; /* Ajusta el color del texto para que sea legible sobre el fondo */
+}
