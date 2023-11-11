@@ -19,6 +19,7 @@ body {
     max-width: 255px;
     width: 100%;
     text-align: center;
+    
 
     
 }
@@ -30,6 +31,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .background {
@@ -45,9 +47,20 @@ body {
 }
 .botons {
     text-align: center;
-border-radius: 10%;
+border-radius: 5px;
 width: 50%;
 background-color: black;
 color: white;
+font-size: 1em;
+font-style: italic;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+transition: background-color 0,3s;
+margin-top: 10px;
 
+}
+
+.botons:hover {
+    background-color: #fad400;
 }

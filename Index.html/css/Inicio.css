@@ -260,10 +260,12 @@ footer ul {
     border: 1px solid #ccc; 
     padding: 20px;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 26px;
    
     
 }
+
+
 
 .menu-item h2 {
     font-size: 18px;

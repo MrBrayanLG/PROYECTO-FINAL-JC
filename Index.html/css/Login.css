@@ -17,6 +17,7 @@
     align-items: center;
     height: 100vh;
     margin: 0;
+    
 }
 
 .login-box {
@@ -29,6 +30,7 @@
     max-width: 255px;
     width: 100%;
     text-align: center;
+    
 }
 
 button {
@@ -42,6 +44,7 @@ button {
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 10px;
+    
 }
 
 button:hover {
@@ -54,6 +57,7 @@ input[type="password"] {
     font-size: 1em;
     padding: 5px;
     width: 100%;
+    box-sizing: border-box;
     
     
 }
