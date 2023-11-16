@@ -6,6 +6,7 @@ body {
 }
 
 
+
 .bars {
     width: 30px; 
     height: 30px;
@@ -15,6 +16,7 @@ body {
     }
 .bars:hover {
     transform: scale(1.3);
+    
 
 }
 .popover {
@@ -49,64 +51,6 @@ body {
     
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .lista {
@@ -217,13 +161,7 @@ footer ul {
     text-align: center;
 }
 
-#n1 {
-    text-align: center;
-}
 
-#n2 {
-    text-align: center;
-}
 
 
 
@@ -272,10 +210,16 @@ footer ul {
     padding: 20px;
     margin: 10px;
     border-radius: 26px;
+    box-shadow: 0 8px 16px rgb(242, 208, 0);
+
+
    
     
 }
+.menu-item:hover {
+    transform: scale(1.1);
 
+}
 
 
 .menu-item h2 {
@@ -308,20 +252,54 @@ nav ul li a {
     color: rgb(255, 208, 0);
 }
 
-#nosotros {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
+.nosotros-section {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 800px;
+
 }
 
-#nosotros h2 {
-    font-size: 24px;
-    margin-top: 20px;
+.nosotros-section header h2 {
+    font-size: 40px;
+    color: #e4c726;
+    margin-bottom: 20px;
 }
 
-#nosotros p {
-    font-size: 16px;
-    line-height: 1.1;
+.nosotros-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+
+}
+
+.nosotros-section article {
+    margin-bottom: 50px;
+}
+
+.nosotros-section header {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.nosotros-section strong {
+    color: #e4c726;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .nosotros-section {
+        padding: 30px;
+    }
+    .nosotros-section header h2 {
+        font-size: 32px;
+    }
+    .nosotros-section p {
+        font-size: 16px;
+    }
 }
 
 
@@ -351,7 +329,6 @@ nav ul li a {
 
 
 
-/* Estilos para la sección de reseñas */
 #reseñas {
     background-color: #f9f9f9;
     padding: 20px;
@@ -431,7 +408,7 @@ nav ul li a {
 }
 
 .agregar-boton {
-    background-color: #4CAF50;
+    background-color: #ffda08;
     color: #fff;
     padding: 12px 20px;
     font-size: 16px;
@@ -442,12 +419,13 @@ nav ul li a {
 }
 
 .agregar-boton:hover {
-    background-color: #45a049;
+    background-color: #000000;
+    color:white;
 }
 
 
 
 .con-logo {
-    background-image: url('../IMG/Fondo-WebOrigin.png'); /* Reemplaza 'ruta/al/logo.png' con la ruta de tu logo */
-    color: #ffffff; /* Ajusta el color del texto para que sea legible sobre el fondo */
+    background-image: url('../IMG/Fondo-WebOrigin.png');
+    color: #ffffff; 
 }

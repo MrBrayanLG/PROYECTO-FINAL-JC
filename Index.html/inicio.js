@@ -4,14 +4,20 @@ function toggleOptions() {
 }
 
 function goToProfile() {
-    // Lógica para redirigir al perfil
     alert("Redirigiendo al perfil...");
 }
 
-// Función para cerrar sesión
 function cerrarSesion() {
-    // Redirige al usuario a la página de inicio de sesión
     window.location.href = 'Disfruta-Síon-Login.html';
 
 }
+document.addEventListener("DOMContentLoaded", function () {
+    const nombreUsuario = localStorage.getItem('nombreUsuario');
+    if (nombreUsuario) {
+        const saludoUsuarioElement = document.getElementById('saludo-usuario');
+        if (saludoUsuarioElement) {
+            saludoUsuarioElement.textContent = `¡Bienvenido, ${nombreUsuario}!`;
+        }
+    }
+});
 

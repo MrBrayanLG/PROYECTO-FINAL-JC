@@ -54,6 +54,9 @@ if (nombreUsuario) {
     perfilLink.textContent = `PERFIL (${nombreUsuario})`;
 }
 
+
+
+
 function mostrarPopup(mensaje) {
     document.getElementById('popup-message').innerText = mensaje;
     document.getElementById('popup').style.display = 'block';
