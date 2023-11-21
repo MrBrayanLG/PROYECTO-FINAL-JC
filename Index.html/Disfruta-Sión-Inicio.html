@@ -163,6 +163,9 @@
                 <p class="cliente-resena">"El servicio fue rápido y la calidad de la comida es excelente. Recomiendo la
                     picada salvaje."</p>
             </div>
+            <div class="resenas-container" id="resenas-container">
+
+            </div>
 
             
 
@@ -170,19 +173,18 @@
 
         
         <div class="agregar-resena">
-            <h3 class="agregar-titulo">Deja tu Reseña</h3>
-            <form class="agregar-formulario">
-                <label for="nombre" class="agregar-label">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" class="agregar-input" required>
+        <h3 class="agregar-titulo">Deja tu Reseña</h3>
+        <form class="agregar-formulario" id="formulario-reseña">
+            <label for="nombre" class="agregar-label">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" class="agregar-input" required>
 
-                <label for="reseña" class="agregar-label">Reseña:</label>
-                <textarea id="reseña" name="reseña" rows="4" class="agregar-input" required></textarea>
+            <label for="reseña" class="agregar-label">Reseña:</label>
+            <textarea id="reseña" name="reseña" rows="4" class="agregar-input" required></textarea>
 
-                <button type="submit" class="agregar-boton">Enviar Reseña</button>
-            </form>
-        </div>
+            <button type="button" class="agregar-boton" onclick="agregarReseña()">Enviar Reseña</button>
+        </form>
     </div>
-
+</div>
 
 
 
@@ -193,7 +195,7 @@
             <div class="redes-sociales">
                 <a href="https://www.facebook.com/profile.php?id=100095370104357" target="_blank">
 
-                    <img src="SVG-ICON/square-facebook.svg" alt="Facebook">
+                    <img src="SVG-ICON/square-facebook.svg" alt="Facebook" id="fc">
                 </a>
                 <a href="https://wa.me/3246253688" target="_blank">
 

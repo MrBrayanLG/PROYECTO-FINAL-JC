@@ -297,16 +297,12 @@ nav ul li a {
     .nosotros-section p {
         font-size: 16px;
     }
-}
-
-
-
-    
+}    
 .redes-sociales a img {
     width: 40px; 
     height: 40px; 
     margin: 5px; 
-    
+
 }
 
 
@@ -336,6 +332,11 @@ nav ul li a {
     
 
 }
+.seccion {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
 
 .seccion-titulo {
     font-size: 28px;
@@ -348,6 +349,7 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction: column; 
 }
 
 .resena {
