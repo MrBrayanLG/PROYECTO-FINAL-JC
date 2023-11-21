@@ -426,39 +426,3 @@ nav ul li a {
     background-image: url('../IMG/Fondo-WebOrigin.png');
     color: #ffffff; 
 }
-
-.logo-fin {
-    display: flex;
-    justify-content: center;
-}
-
-
-    .texto {
-        text-align: center;
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-
-    h1 {
-        color: #e4c726;
-        font-size: 2.5em;
-        margin-bottom: 10px;
-        text-transform: uppercase;
-    }
-
-    p {
-        color: #555; 
-        font-size: 1.2em;
-        line-height: 1.6;
-    }
-
-    strong {
-        color: rgb(255, 208, 0);
-        font-weight: bold;
-    }
-    #p-footer {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: white;
-    }
-
