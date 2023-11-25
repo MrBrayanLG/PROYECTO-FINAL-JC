@@ -8,7 +8,7 @@ function goToProfile() {
 }
 
 function cerrarSesion() {
-    window.location.href = 'Disfruta-Síon-Login.html';
+    window.location.href = 'index.html';
 
 }
 document.addEventListener("DOMContentLoaded", function () {

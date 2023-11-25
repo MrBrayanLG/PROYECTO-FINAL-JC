@@ -20,7 +20,7 @@ function guardarUsuario() {
     var usuarioJSON = JSON.stringify(usuario);
     localStorage.setItem('usuario', usuarioJSON);
     localStorage.setItem('nombreUsuario', nombre);
-    window.location.href = 'Disfruta-Síon-Login.html';
+    window.location.href = 'index.html';
 }
 
 function iniciarSesion() {
